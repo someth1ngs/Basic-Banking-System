@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('https://www.bca.co.id/-/media/Images/tentang-bca/Kafe-BCA/Siaran-Pers/2020/03/20200323-cabang-wfh.jpg');
+    background-size: cover;
+    background-blur: blur(100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 15px 20px;
+    margin: 10px 0;
+    font-size: 24px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: lightblue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    16.666% { color: orange; }
+    33.333% { color: yellow; }
+    50% { color: green; }
+    66.666% { color: blue; }
+    83.333% { color: indigo; }
+    90% { color: violet; }
+    100% { color: red}
+}
+
+#challenge-2 {
+    font-size: 36px;
+    font-weight: bold;
+    animation: rainbow 4s linear infinite;
+}
